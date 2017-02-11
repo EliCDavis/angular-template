@@ -25,14 +25,14 @@
 
 module.exports = ExampleDirective;
 
-function ExampleDirective(){
+function ExampleDirective() {
     return {
         'restrict': 'E',
-        'templateUrl': 'partial/example.directive.html',
-        'controller': /*@ngInject*/ function ($scope, ExampleService) {
-            
+        'templateUrl': 'partial/directives/example.html',
+        'controller': /*@ngInject*/ function($scope, ExampleService) {
+
             $scope.message = "Message from scope!!!";
-         
+
             ExampleService.exampleCall();
 
         }

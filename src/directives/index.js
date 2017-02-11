@@ -22,5 +22,7 @@
  * THE SOFTWARE.
  */
 
-var app = require("angular").module('Cover Sharks');
-app.directive('csEx',                    require('./ExampleDirective'));
+var app = require("angular").module('App');
+app.directive('csEx', require('./ExampleDirective'));
+app.directive('app', require('./AppDirective'));
+app.directive('csToolbar', require('./ToolbarDirective'));

@@ -22,5 +22,5 @@
  * THE SOFTWARE.
  */
 
-var app = require("angular").module('Cover Sharks');
-app.service('ExampleService',       require('./ExampleService'));
+var app = require("angular").module('App');
+app.service('ExampleService', require('./ExampleService'));

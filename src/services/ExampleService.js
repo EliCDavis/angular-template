@@ -32,10 +32,10 @@ module.exports = ExampleService;
 function ExampleService() {
 
     var self = this;
-    
+
     // Publically exposed function
-    self.exampleCall = function(){
-        console.log(`Example Service has been Called!`);
+    self.exampleCall = function() {
+        console.log('Example Service has been Called!');
     }
 
 }

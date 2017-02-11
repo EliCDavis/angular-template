@@ -14,3 +14,10 @@ Here lies some basic Angular app
 npm install
 npm install gulp -g
 ```
+
+### Running
+Starts a session with browsersync
+
+```
+gulp
+```

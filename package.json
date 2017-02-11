@@ -1,5 +1,5 @@
 {
-  "name": "angular",
+  "name": "example app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,10 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "angular": "^1.5.6",
-    "angular-animate": "^1.5.6",
-    "angular-aria": "^1.5.6",
+    "angular": "^1.6.2",
+    "angular-animate": "^1.6.2",
+    "angular-aria": "^1.6.2",
     "angular-material": "^1.1.0-rc.5",
+    "angular-route": "^1.6.2",
     "babel-preset-es2015": "^6.18.0",
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.5",
@@ -22,13 +23,17 @@
     "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.0",
     "gulp-minify": "0.0.12",
+    "gulp-notify": "^2.2.0",
     "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.4.1",
     "gulp-streamify": "^1.0.2",
     "gulp-uglify": "^2.0.0",
     "rx": "^4.1.0",
     "rx-angular": "^1.1.3",
     "socket.io": "^1.4.8",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0"
   },
   "repository": {
     "type": "git",
@@ -36,9 +41,5 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/coversharks/angular#readme",
-  "devDependencies": {
-    "gulp-notify": "^2.2.0",
-    "watchify": "^3.8.0"
-  }
+  "homepage": "https://bitbucket.org/coversharks/angular#readme"
 }

@@ -28,13 +28,15 @@ var rxDecorateDirective = require('./3rdParty/rxDecorateDirective');
 
 require('angular-material');
 require('rx-angular');
+require('angular-route');
 
-var app = angular.module('Cover Sharks', ['ngMaterial', 'rx'])
+var app = angular.module('App', ['ngMaterial', 'rx', 'ngRoute']);
 
 require('./services');
 require('./directives');
+require('./controllers');
 
-app.config(['$provide', function ($provide) {
+app.config(['$provide', function($provide) {
     rxDecorateDirective($provide, 'ngShow');
     rxDecorateDirective($provide, 'ngHide');
     rxDecorateDirective($provide, 'ngDisabled');
@@ -42,5 +44,14 @@ app.config(['$provide', function ($provide) {
     rxDecorateDirective($provide, 'ngBind');
 }]);
 
+app.config(function($routeProvider) {
+    $routeProvider
+        .when("/", {
+            templateUrl: "partial/routing/home.html",
+            controller: "homeController",
+            controllerAs: "homeCtrl"
+        });
+});
 
-angular.bootstrap(document, ['Cover Sharks']);
+
+angular.bootstrap(document, ['App']);
